@@ -24,7 +24,7 @@ const useDetectUser = (): void => {
           if (cancelled) {
             return;
           }
-          dispatch(getUserRejected(e.response.data));
+          dispatch(getUserRejected(e.response?.data));
         });
       watchHandle = setTimeout(detectUser, POLL_INTERVAL);
     };
