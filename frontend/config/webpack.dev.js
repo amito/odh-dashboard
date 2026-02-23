@@ -258,11 +258,11 @@ module.exports = smp.wrap(
           return [
             {
               context: ['/api', '/_mf', '/mlflow', ...mfProxies],
-              target: `http://0.0.0.0:${BACKEND_PORT}`,
+              target: `http://127.0.0.1:${BACKEND_PORT}`,
             },
             {
               context: ['/wss/k8s'],
-              target: `ws://0.0.0.0:${BACKEND_PORT}`,
+              target: `ws://127.0.0.1:${BACKEND_PORT}`,
               ws: true,
             },
           ];
