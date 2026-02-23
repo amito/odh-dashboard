@@ -17,6 +17,7 @@ export const techPreviewFlags = {
   externalVectorStores: false,
   vLLMDeploymentOnMaaS: false,
   promptManagement: false,
+  disableNavigator: true,
 } satisfies Partial<DashboardCommonConfig>;
 
 export const devTemporaryFeatureFlags = {

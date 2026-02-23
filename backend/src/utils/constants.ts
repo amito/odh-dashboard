@@ -97,6 +97,7 @@ export const blankDashboardCR: DashboardConfig = {
       externalVectorStores: false,
       vLLMDeploymentOnMaaS: false,
       promptManagement: false,
+      disableNavigator: true,
     },
     notebookController: {
       enabled: true,

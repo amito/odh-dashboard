@@ -57,6 +57,7 @@ export type MockDashboardConfigType = {
   deploymentWizardYAMLViewer?: boolean;
   vLLMDeploymentOnMaaS?: boolean;
   promptManagement?: boolean;
+  disableNavigator?: boolean;
   genAiStudioConfig?: {
     aiAssetCustomEndpoints?: {
       externalProviders?: boolean;
@@ -113,6 +114,7 @@ export const mockDashboardConfig = ({
   externalVectorStores = false,
   vLLMDeploymentOnMaaS = false,
   promptManagement = false,
+  disableNavigator = true,
   hardwareProfileOrder = ['test-hardware-profile'],
   genAiStudioConfig = {
     aiAssetCustomEndpoints: {
@@ -292,6 +294,7 @@ export const mockDashboardConfig = ({
       externalVectorStores,
       vLLMDeploymentOnMaaS,
       promptManagement,
+      disableNavigator,
     },
     notebookController: {
       enabled: !disableNotebookController,

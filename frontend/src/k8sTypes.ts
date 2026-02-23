@@ -1312,6 +1312,7 @@ export type DashboardCommonConfig = {
   externalVectorStores?: boolean;
   vLLMDeploymentOnMaaS?: boolean;
   promptManagement?: boolean;
+  disableNavigator?: boolean;
 };
 
 // [1] Intentionally disjointed fields from the CRD in this type definition
